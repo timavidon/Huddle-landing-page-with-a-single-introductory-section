@@ -11,9 +11,9 @@
 
   /* Font sizes */
   --fs-400: 1rem;
-  --fs-500: 1.1875rem;
+  --fs-500: 1.1rem;
   --fs-800: 1.875rem;
-  --fs-900: 2.75rem;
+  --fs-900: 2.5rem;
 
   /* Font weights */
   --fw-regular: 400;
@@ -71,13 +71,9 @@ main {
   margin-block: 5rem;
 }
 
-.content {
-  display: grid;
-  place-items: center;
-}
-
 .heading {
   max-width: 20ch;
+  margin-inline: auto;
   font-family: var(--ff-heading);
   font-size: var(--fs-800);
   font-weight: var(--fw-semi-bold);
@@ -122,8 +118,8 @@ footer {
 }
 
 .social-icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.4rem;
+  width: 2.4rem;
   padding: 0.5rem;
   fill: var(--clr-100);
   border-radius: 100vw;
@@ -152,19 +148,26 @@ footer {
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
     text-align: left;
-  }
-  main {
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
   }
 
-  .content {
-    /* width: 100%; */
-    place-items: start;
+  main {
+    grid-template-columns: auto auto;
+  }
+
+  .logo {
+    max-width: 14rem;
   }
 
   .heading {
     font-size: var(--fs-900);
+    margin-inline: 0 auto;
+  }
+
+  .button {
+    font-size: var(--fs-500);
+    padding: 0.7rem 3.5rem;
+    box-shadow: 0px 3px 8px hsla(0, 0%, 0%, 0.5);
   }
 
   footer {
