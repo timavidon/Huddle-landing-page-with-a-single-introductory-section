@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/timavidon/Huddle-landing-page-with-a-single-introductory-section)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://timavidon.github.io/Huddle-landing-page-with-a-single-introductory-section/)
 
 ## My process
 
