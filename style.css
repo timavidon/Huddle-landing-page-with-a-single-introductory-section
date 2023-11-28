@@ -142,6 +142,19 @@ footer {
   color: var(--clr-100);
 }
 
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* Desktop */
 @media (min-width: 50em) {
   body {
@@ -156,7 +169,7 @@ footer {
   }
 
   .logo {
-    max-width: 14rem;
+    max-width: 12rem;
   }
 
   .heading {
