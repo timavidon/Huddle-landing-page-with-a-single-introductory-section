@@ -12,8 +12,8 @@
   /* Font sizes */
   --fs-400: 1rem;
   --fs-500: 1.1875rem;
-  --fs-600: 1.125rem;
-  --fs-900: 1.875rem;
+  --fs-800: 1.875rem;
+  --fs-900: 2.75rem;
 
   /* Font weights */
   --fw-regular: 400;
@@ -79,7 +79,7 @@ main {
 .heading {
   max-width: 20ch;
   font-family: var(--ff-heading);
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: var(--fw-semi-bold);
 }
 
@@ -154,12 +154,17 @@ footer {
     text-align: left;
   }
   main {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .content {
+    /* width: 100%; */
     place-items: start;
+  }
+
+  .heading {
+    font-size: var(--fs-900);
   }
 
   footer {
